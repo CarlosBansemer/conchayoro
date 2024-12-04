@@ -17,8 +17,8 @@ deploy:
   needs: build
   steps:
     - uses: actions/download-artifact@v4
-  with:
-  name: build-result
-  path: build-result.txt
+      with:
+        name: build-result
+        path: build-result.txt
     - name: use of artifact created
       run: ls build-result.txt
