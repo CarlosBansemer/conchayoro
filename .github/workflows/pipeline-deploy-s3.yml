@@ -29,4 +29,4 @@ jobs:
         name: site
         path: index.html
     - run: ls -la
-    - run: aws s3 cp https://us-east-1.console.aws.amazon.com/s3/buckets/conchayoro-cfb?region=us-east-1&bucketType=general&tab=objects s3://$BUCKET_S3 --recursive --aclpublic-read
+    - run: aws s3 cp https://conchayoro-cfb.s3.us-east-1.amazonaws.com s3://$BUCKET_S3 --recursive --aclpublic-read
