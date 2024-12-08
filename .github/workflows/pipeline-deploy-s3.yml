@@ -25,7 +25,7 @@ deploy:
     BUCKET_S3: ${{ vars.BUCKET_S3 }}
   steps:
   - uses: actions/download-artifact@v4
-with:
+    with:
   name: site
   path: index.html
   - run: ls -la
